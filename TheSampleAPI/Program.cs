@@ -12,6 +12,9 @@ app.UseOpenApi();                                   //this adds OpenAPI/Swagger 
 app.UseHttpsRedirection();                          //this is mapping middleware ie routing setup
 
 app.AddRootEndpoints();
+app.AddCourseEndpoints();
 
 app.Run();
+
+
 

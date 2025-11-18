@@ -1,4 +1,6 @@
-﻿namespace TheSampleAPI.Startup
+﻿using TheSampleAPI.Data;
+
+namespace TheSampleAPI.Startup
 {
     public static class DependenciesConfig
     {
@@ -6,6 +8,7 @@
         {
             // Register application services here
             builder.Services.AddOpenApiServices();
+            builder.Services.AddTransient<CourseData>();
         }
     }
 }
