@@ -11,6 +11,8 @@ app.UseOpenApi();                                   //this adds OpenAPI/Swagger 
 
 app.UseHttpsRedirection();                          //this is mapping middleware ie routing setup
 
+app.ApplyCorsConfig();                             //this applies the CORS configuration
+
 app.AddRootEndpoints();
 app.AddCourseEndpoints();
 
