@@ -13,6 +13,7 @@ app.UseHttpsRedirection();                          //this is mapping middleware
 
 app.ApplyCorsConfig();                             //this applies the CORS configuration
 
+app.MapAllHealthChecks();                          //this maps health check endpoints
 app.AddRootEndpoints();
 app.AddCourseEndpoints();
 

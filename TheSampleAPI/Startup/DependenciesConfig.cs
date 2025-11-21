@@ -10,6 +10,7 @@ namespace TheSampleAPI.Startup
             builder.Services.AddOpenApiServices();
             builder.Services.AddTransient<CourseData>();
             builder.Services.AddCorsServices();
+            builder.Services.AddAllHealthChecks();
         }
     }
 }
